@@ -1,0 +1,41 @@
+<script>
+    //JS
+    function add(a,b,c){
+        return a+b+c;
+    }
+    console.log("add: "+add(5,6,1))
+
+    //ES6
+    const x = (a,b,c) =>{
+        return a-b-c;
+    }
+    console.log("Sub: "+x(2,2,2))
+
+    const y = (a,b,c) =>{
+        return a*b*c;
+    }
+    console.log("Mul: "+y(10,2,2))
+
+    const z = (a,b,c) =>{
+        return a/b/c;
+    }
+    console.log("div: "+z(10,5,2))
+
+
+    const i = (a,b,c) =>{
+        return a%b%c;
+    }
+    console.log("Modulu: "+i(10,6,3))
+
+    //ES6 - default value
+    const mod = (a,b = 2) =>{
+        return a/b;
+    }
+    console.log("mod: "+mod(10))
+    console.log("mod: "+mod(9))
+    console.log("mod: "+mod(21))
+    console.log("mod: "+mod(21,3))
+
+
+
+</script>

@@ -1,0 +1,64 @@
+<script>
+//    class Arith{
+//     constructor(a,b){
+        
+//     }
+
+//     add = (a,b) =>{
+//         return a+b;
+//     }
+
+//      sub = (a,b) =>{
+//         return a-b;
+//      }
+
+//     }
+    
+
+
+   
+
+    
+//    class Test1 extends Arith{
+//     constructor(a,b){
+//         super(a,b);
+//         this.name = "Raja"
+//         this.age = "22"
+//     }
+//    }
+
+//    let a = 10;
+//    let b = "Raja"
+//    let arith = new Arith(a,b);
+//    let test1 = new Test1(a,b);
+  
+//    console.log(test1.name)
+//    console.log(test1.age)
+//    console.log("Add: "+test1.add(5,2))
+//    console.log("Sub: "+test1.sub(5,2))
+
+
+
+   class Student{
+    constructor(id, name, marks){  
+       this.id = id;
+       this.name = name;
+       this.marks = marks  
+    }
+    getMarks = () =>{
+            return this.marks
+            
+    }
+    setMarks = (marks) => {
+        this.marks = marks
+    }
+   
+}
+
+let  s = new Student(21429,"Raja",100)
+   console.log(s.getMarks());
+   console.log(s.setMarks(78));
+   console.log(s.getMarks());
+  
+   
+</script>
