@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.parent{
+  width: 100%;
+  height: 100vh;
+}
+.header{
+  width: 100%;
+  height: 130px;
+  background-color: #282c34;
+}
+.bottom{
+  width: 100%;
+  height: 79%;
+  display: flex;
+}
+
+ .left{
+  width: 450px;
+  height: 100%;
+  background-color: rgb(18, 63, 102);
+}
+.right{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.table{
+  width: 50%;
+  border: 1px solid #ddd; /* Add border to the entire table */
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+border: 1px solid #ddd; /* Add border to each cell */
+padding: 8px;
+text-align: left;
+}
+th {
+background-color: #f2f2f2;
+}
