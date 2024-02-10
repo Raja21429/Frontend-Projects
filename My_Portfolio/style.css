@@ -1,0 +1,128 @@
+/* Color variables */
+:root {
+  --white-color: #fff;
+  --bg-color: #fff;
+  --gray-color: #ccc;
+}
+
+/* Changing background color */
+body {
+  background: var(--bg-color) !important;
+}
+
+/* Changing link color */
+.nav-item .nav-link {
+  color: var(--white-color);
+}
+
+
+
+.hero img{
+  width: 450px;
+  height: 450px;
+  background-image: url("../My_Portfolio/image/profile.jpeg");
+  background-position: top center;
+  background-size: 100%;
+  position: relative;
+  right: 200px;
+  top: 200px;
+  border-radius: 90%;
+  display: flex;
+  
+}
+
+
+.text{
+  position: relative;
+  left: 300px;
+  bottom: 100px;
+  font-size: 50px;
+}
+
+.display-6{
+  position: relative;
+  left: 350px;
+  display: flex;
+  
+}
+
+#skills i {
+  height: 100px;
+  width: 100px;
+}
+
+#portfolio img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+/* Timeline background line */
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+.txt{
+  position: relative;
+  left: 330px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.im1{
+  height: 200px; 
+  width: 200px;
+  background-image: url("./image/profile.jpeg");
+  background-position: top center;
+  background-size: 100%;
+  border: 5px solid black;
+  border-radius: 200px;
+}
+/* Contact section background image */
+#contact {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../My_Portfolio/image/contact-bg.jpeg");
+}
+
+@media screen and (max-width: 990px) {
+  #skills .card {
+    width: calc(100% / 2 - 10px) !important;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #skills .card,
+  #portfolio .card-wrapper {
+    width: 100% !important;
+  }
+}
