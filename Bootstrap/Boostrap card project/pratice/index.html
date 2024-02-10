@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .text{
+            border: none;
+            background-color: aliceblue;
+            border-radius: 5px;
+            position: relative;
+            left: 50px;
+        }
+        .btn{
+            position: relative;
+            left: 45em;
+        }
+        .an{
+            position: relative;
+            left: 20px;
+            bottom: 10px;
+        }
+        .p2{
+            position: relative;
+            left: 130px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container-fuild bg-white" style="width: 100%; height: 650px;">
+        <input class="text ms-5 mt-3" placeholder="🔍 Search..." name="text">
+        <button class="btn btn-primary">+ Create Now ▼</button>
+
+    <div class="container m-6">
+        <div class="row mt-4" id="list">
+            
+             <!-- <div class="card col-3 bg-dark text-white shadow">
+                    
+                <div class="card-body">
+                    <div class="card-title fs-4 bg-dark" id="name">🌐 Google Drive</div>
+                   <div class="an ms-4"> <a href="">View Folder</a></div>
+                   <span class="p1 ms-5">20Gb</span>
+                   <span class="p2">50GB used</span>
+                   <div class="load ms-5 ps-5">███████▒▒▒ 70%</div>
+                    
+                   
+                </div>
+          </div> -->
+      </div> 
+    </div>
+
+    <div class="container bg-white"  style="height: 100%px; width: 100%;">
+        <table class="table mt-3 " id="sample">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Data modify</th>
+                    <th>Size</th>
+                    <th>Member</th>
+                    <th>hui</th>
+                </tr>
+                <tr>
+                    <td>index</td>
+                    <td>12-10-2020 9:35</td>
+                    <td>09 KB</td>
+                    <td></td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>Project-A.zip/td>
+                    <td>22-1-2019 2:25</td>
+                    <td>15 KB</td>
+                    <td></td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>image-1.jpg</td>
+                    <td>1-3-2011 10:55</td>
+                    <td>03 KB</td>
+                    <td></td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>Update.list.txt</td>
+                    <td>7-10-2008 1:12</td>
+                    <td>07 KB</td>
+                    <td></td>
+                    <td>...</td>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+
+
+</div>
+
+<script>
+    let a =""
+    for (let index = 0; index < 6; index++) {
+
+        // a +=` <div class="card col-3 ms-5 mt-5 bg-dark text-white shadow">
+                    
+        //             <img class="card img-top"  src="/image/My photo.jpeg"/>
+        //             <div class="card-body">
+        //                 <div class="card-title fs-4 bg-dark" id="name">Google Drive</div>
+        //                 <div class="card-text text-center bg-dark" id="info">Some quick example text to build on the card content</div>
+                        
+        //             </div>
+        //       </div>`
+
+
+        a +=` <div class="card col-3 ms-5 mt-5 bg-dark text-white shadow">
+                    
+                    <div class="card-body">
+                        <div class="card-title fs-4 bg-dark" id="name">🌐 Google Drive</div>
+                       <div class="an ms-4"> <a href="">View Folder</a></div>
+                       <span class="p1">20Gb</span>
+                       <span class="p2">50GB used</span>
+                       <div class="load ms-5 ">███████▒▒▒ 70%</div>
+                        
+                       
+                    </div>
+              </div>`
+        
+        
+    }
+    document.getElementById("list").innerHTML=a
+
+</script>
+   
+
+</body>
+</html>

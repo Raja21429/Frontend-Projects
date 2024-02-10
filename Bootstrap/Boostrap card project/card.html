@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+       
+    </style>
+    </head>
+    <body>
+
+        <div class="container-fuild">
+            <div class="row r1" id="list">
+                
+                     <div class="card col-4 bg-dark text-white m-4 shadow">
+                        
+                    <img class="card img-top"  src="/Boostrap card project/image/My photo.jpeg">
+                    <div class="card-body">
+                        <div class="card-title text-center fs-4 bg-dark" id="name">Raja</div>
+                        <div class="card-text text-center bg-dark" id="info">Some quick example text to build on the card content</div>
+                        <div class="btn btn-success ms-4 mt-2" id="lags">Java</div>
+                        <div class="btn btn-success ms-4 mt-2" id="lags">DSA</div>
+                        <div class="btn btn-success ms-4 mt-2" id="lags">HTML</div>
+                    </div>
+                </div> 
+                
+            </div>
+        </div>
+        <script>
+            const json = {"data" : [{"profile" :"/image/My photo.jpeg","name" : "Raja", "info" : "Some quick example text to build on the card content.","lags" : "Java,DSA,HTML" },{"profile" :"./My photo.jpeg","name" : "Raja", "info" : "Some quick example text to build on the card content.","lags" : "Java,DSA,HTML" },{"profile" :"./My photo.jpeg","name" : "Raja", "info" : "Some quick example text to build on the card content.","lags" : "Java,DSA,HTML" },{"profile" :"./My photo.jpeg","name" : "Raja", "info" : "Some quick example text to build on the card content.","lags" : "Java,DSA,HTML" }]}
+            let a = ""
+            for (let index = 0; index < 4;index++) {
+                a = `${a}
+                   <div class="card col-4 bg-dark text-white shadow">
+                        
+                    <img class="card img-top"  src="/Boostrap card project/image/My photo.jpeg">
+                    <div class="card-body">
+                        <div class="card-title text-center fs-4 bg-dark" id="name">Raja</div>
+                        <div class="card-text text-center bg-dark" id="info">Some quick example text to build on the card content</div>
+                        <div class="btn btn-success ms-4 mt-2" id="lags">Java</div>
+                        <div class="btn btn-success ms-4 mt-2" id="lags">DSA</div>
+                        <div class="btn btn-success ms-4 mt-2" id="lags">HTML</div>
+                    </div>
+                </div> `
+            }
+                document.getElementById("list").innerHTML = a
+                
+           
+        </script>
+    </body>
+</html>

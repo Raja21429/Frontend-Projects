@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            .sp3{
+               position: relative;
+               top: 6px;
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="container-fuild bg-white m-3" style="height: 100px;">
+            <div class="row" id="list">
+                <!-- <div class="col-1">
+                    <div class=" container-fuild ms-4">
+                        <img class="im" style="width: 50px; height: 70px;" src="/BS table/download.jpeg">
+                    </div>
+                </div>
+
+
+
+                <div class="col-2 text-dark" style="height: 100px;">
+                    <div class="d2 text-center fs-4">Water Proof<br> Mobile Phone</div>
+                     <span class="d3 ps-4">⭐ ⭐ ⭐ ⭐ ⭐</span>
+                </div>
+
+                
+                <div class="col-3 text-muted" style="height: 100px;">
+                    <ul>
+                        <li>12MP TrueDepth front camara</li>
+                        <li>Battery life : Up to 22 hours of vedio playback</li>
+                        <li>5G and Gigabit LTE</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-2  text-center text-dark" style="height: 100px;">
+                    <p class="pa1 m-2">Colors :</p>
+                    <p class="pa2 m-4 ">⚫🟢🔵</p>
+                </div>
+
+
+                <div class="col-2  text-dark" style="height: 100px;">
+                <span class="sp1 align-items-center text-white d-flex fs-4"><del>$500</del></span>
+                <span class="sp2 fs-4 text-center ps-5"><del class="de text-muted">$500</del> $450</span>
+                
+                </div>
+                <div class="col-1" style="height: 100px;">
+                <div class="container bg-primary mt-2 ms-2" style="width: 95px; height: 80px;">
+                <p class="para ms-3">🛒</p>
+                <p class="para1 text-center fs-5 text-white">Add</p>
+                </div>
+                
+                </div>
+
+                <div class="col-1 pt-4" style="height: 100px;">
+                    <span class="sp fs-3 ms-2 ">… </span>
+                <span class="sp3 fs-4 p-1">▼</span>
+                </div>
+           </div>
+            
+
+        </div> -->
+
+
+        <script>
+            const json = {"data" :[{"profile" : "/BS table/relme.jpeg","proof" : "Water Proof Mobile Phone","rate" :"⭐ ⭐ ⭐ ⭐ ⭐","camera" : "12MP TrueDepth front camara","battery" : "Up to 22 hours of vedio playback","modual" :"5G and Gigabit LTE","color" :"⚫ 🟢 🔵","original_amount" :"$500","offer_amount" :"$450","order" : "Add"},
+                                    {"profile" : "/BS table/oppo.jpeg","proof" : "Smart phone mobile camera","rate" :" ⭐ ⭐ ⭐ ⭐ ⭐ ","camera" : "Up to 20 hours of vedio playback","battery" : "10MP TrueDepth front camara","modual" :"5G and Gigabit LTE","color" :"🔵 ⚫ 🟢","original_amount" :"$280","offer_amount" :"$240","order" : "Add"},
+                                    {"profile" : "/BS table/oneplus-11-pro.jpg","proof" : "Black color oneplus phone","rate" :"⭐ ⭐ ⭐ ⭐","camera" : "5G and Gigabit LTE","battery" : "Up to 18 hours of vedio playback","modual" :"14MP TrueDepth front camara","color" :"🟢 🔵 ⚫","original_amount" :"$420","offer_amount" :"$380","order" : "Add"},
+                                    {"profile" : "/BS table/oppo.jpeg","proof" : "Smartphone pro +2000","rate" :"⭐ ⭐ ⭐ ⭐ ⭐","camera" : "Up to 20 hours of vedio playback","battery" : "10MP TrueDepth front camara","modual" :"5G and Gigabit LTE","color" :"🔵 ⚫ 🟢","original_amount" :"$340","offer_amount" :"$300","order" : "Add"},
+                                    {"profile" : "/BS table/relme.jpeg","proof" : "New phone Smart Max pro","rate" :"⭐ ⭐ ⭐ ⭐ ⭐","camera" : "12MP TrueDepth front camara","battery" : "Up to 22 hours of vedio playback","modual" :"5G and Gigabit LTE","color" :"⚫ 🟢 🔵","original_amount" :"$290","offer_amount" :"$250","order" : "Add"},
+                                    {"profile" : "/BS table/oneplus-10-pro.jpg","proof" : "Black color oneplus phone","rate" :"⭐ ⭐ ⭐ ","camera" : "5G and Gigabit LTE","battery" : "Up to 18 hours of vedio playback","modual" :"14MP TrueDepth front camara","color" :"🟢 🔵 ⚫","original_amount" :"$470","offer_amount" :"$430","order" : "Add"},
+                                    {"profile" : "/BS table/oneplus-10-pro.jpg","proof" : "Black color oneplus phone","rate" :"⭐ ⭐ ⭐ ","camera" : "5G and Gigabit LTE","battery" : "Up to 18 hours of vedio playback","modual" :"14MP TrueDepth front camara","color" :"🟢 🔵 ⚫","original_amount" :"$470","offer_amount" :"$430","order" : "Add"}]}
+            let a = ""
+            for (let index = 0; index < json.data.length; index++) {
+              let  card = json.data[index]
+                
+
+                // let color = card.color.map(color=>{ return ``})
+                // color = colors.join("");
+                // console.log(index+" ::::" +JSON.stringify(card))
+
+                a = `${a} <div class="col-1">
+                <div class=" container-fuild ms-4">
+                        <img class="im" style="width: 50px; height: 70px;" src="${card.profile}">
+                    </div>
+                </div>
+
+
+
+                <div class="col-2 text-dark" style="height: 100px;">
+                    <div class="d2 text-center fs-4">${card.proof}</div>
+                     <span class="d3 ps-4">${card.rate}</span>
+                </div>
+
+                
+                <div class="col-3 text-muted" style="height: 100px;">
+                    <ul>
+                        <li>${card.camera}</li>
+                        <li>${card.battery}</li>
+                        <li>${card.modual}</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-2  text-center text-dark" style="height: 100px;">
+                    <p class="pa1 m-2">Colors :</p>
+                    <p class="pa2 m-4 ">${card.color}</p>
+                </div>
+
+
+                <div class="col-2  text-dark" style="height: 100px;">
+                <span class="sp1 align-items-center text-white d-flex fs-4"><del>$500</del></span>
+                <span class="sp2 fs-4 text-center ps-5"><del class="de text-muted">${card.original_amount}</del> ${card.offer_amount}</span>
+                
+                </div>
+                <div class="col-1" style="height: 100px;">
+                <div class="container bg-primary mt-2 ms-2" style="width: 95px; height: 80px;">
+                <p class="para ms-3">🛒</p>
+                <p class="para1 text-center fs-5 text-white">Add</p>
+                </div>
+                
+                </div>
+
+                <div class="col-1 pt-4" style="height: 100px;">
+                    <span class="sp fs-3 ms-2 ">… </span>
+                <span class="sp3 fs-4 p-1">▼</span>
+                </div>
+           </div>
+            
+
+        </div>`
+
+            }
+            document.getElementById("list").innerHTML = a
+        </script>
+
+    </body>
+</html>
