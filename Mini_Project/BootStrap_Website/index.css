@@ -1,0 +1,193 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tx1{
+    position: absolute;
+    top: 290px;
+    left: 200px;
+}
+.tx2{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    font-size: 50px;
+}
+.tx3{
+    position: absolute;
+    top: 400px;
+    left: 380px;
+    font-size: 50px;
+}
+.tx4{
+    position: absolute;
+    top: 405px;
+    left: 580px;
+    font-size: 50px;
+}
+.tx5{
+    position: absolute;
+    top: 460px;
+    left: 200px;
+    font-size: 50px;
+}
+.tx6{
+    position: absolute;
+    width: 400px;
+    top: 550px;
+    left: 200px;
+}
+.page1{
+    position: absolute;
+    left: 650px;
+    top: 290px;
+    background-image: url("/BootStrap_Website/images/1st\ page\ img.png");
+    width: 240px;
+    height: 290px;
+    border-radius: 30px ;
+    background-position: -10.121rem;
+    background-size: 200%;
+}
+.page2{
+    position: absolute;
+    left: 655px;
+    top: 590px;
+    background-image: url("/BootStrap_Website/images/1st\ page\ img1.png");
+    width: 240px;
+    height: 240px;
+    border-radius: 30px ;
+    background-position: -2.121rem;
+    background-size: 150%;
+}
+.page3{
+    position: absolute;
+    left: 910px;
+    top: 320px;
+    background-image: url("/BootStrap_Website/images/1st\ page\ img2.png");
+    width: 240px;
+    height: 470px;
+    border-radius: 30px ;
+    background-position: -13.121rem;
+    background-size: 300%;
+}
+.page4{
+    position: absolute;
+    left: 800px;
+    top: 490px;
+    background-image: url("/BootStrap_Website/images/1st\ page\ imag3.png");
+    width: 200px;
+    height: 200px;
+    border-radius: 30px ;
+    background-position: center;
+    background-size: 150%;
+    border: 40px solid rgb(59, 59, 170);
+    border-radius: 100px;
+}
+.co1{ /* in case back content hide achuna atha veliya kondu varathuku*/
+    position: relative;
+    z-index: 0;
+}
+.cont1{
+    width: 70em;
+    height: 80px;
+    position: relative;
+    left: 80px;
+    top: 50px;
+    border-radius: 100px;
+    box-shadow:  5px 5px 42px #c5c5c5,
+             -5px -5px 42px #fbfbfb;
+}
+.cont2{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    border-radius: 30px;
+    border: 1px black solid;
+    
+}
+.inside1{
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+.cont3{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 290px;
+    top: 20px;
+    border-radius: 30px;
+    border: 1px black solid;
+    
+}
+.inside2{
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+.cont4{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 550px;
+    top: 20px;
+    border-radius: 30px;
+    border: 1px black solid;
+    
+}
+.inside3{
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+.cont5{
+    position: absolute;
+    left: 900px;
+    top: 20px;
+}
+.secondpg{
+    position: relative;
+    left: 30px;
+    top: 100px;
+    background-image: url("/BootStrap_Website/images/2nd\ page\ img2.png");
+    width: 310px;
+    height: 450px;
+    border-radius: 210px;
+    border: 9px rgb(236, 232, 232) solid;
+    background-position: -10.121rem;
+    background-size: 200%;        
+}
+.secondpg1{
+    position: relative;
+    left: 5em;
+    bottom: 35px;
+    background-image: url("/BootStrap_Website/images/2nd\ page\ img3.png");
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: 91%;    
+    border: none;
+}
+.secondpg2{
+    position: relative;
+    left: 23em;
+    bottom: 8em;
+    background-image: url("/BootStrap_Website/images/2nd\ page\ img4.png");
+    width: 220px;
+    height: 300px;
+    border-radius: 210px;
+    border: 5px rgb(236, 232, 232) solid;
+    background-position: center;
+    background-size: 110%;        
+}
+.re{
+    position: relative;
+    left: 43em;
+    bottom: 3em;
+    font-weight: bold;
+}
+
+
