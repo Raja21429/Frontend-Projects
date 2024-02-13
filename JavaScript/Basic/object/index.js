@@ -20,7 +20,7 @@ console.log(person.sibllings.brother);
 
 //for in loop
 for(let key in person){   //key print method
-    console.log(key,person['key']);
+    console.log(person[key]);
 }
 
 
